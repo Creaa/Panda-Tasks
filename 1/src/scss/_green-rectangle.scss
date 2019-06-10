@@ -1,0 +1,26 @@
+.green-rectangle {
+	&__rectangle {
+		height: 50vh;
+		background-color: $greenRectangleColor;
+		margin: 1rem;
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+	.green-rectangle {
+		&__rectangle {
+			height: 60vh;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1400px) {
+	.green-rectangle {
+		&__rectangle {
+			height: 50vh;
+			margin: 2rem 10vw;
+		}
+	}
+}

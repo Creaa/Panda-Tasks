@@ -1,0 +1,101 @@
+.article {
+	&__primary-rectangle {
+		height: 50vh;
+		background-color: $primaryRectangleColor;
+		margin: 0 1rem;
+		margin-bottom: 0.9rem;
+	}
+
+	&__secondary-rectangle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $secondaryRectangleColor;
+		height: 25vh;
+		margin: 1rem;
+
+		p {
+			font-family: Helvetica, sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem;
+			color: $primaryFontColor;
+			margin: 0 2rem 1.2rem;
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 800px) {
+	.article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		.wrapper {
+			margin: 1rem 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__secondary-rectangle {
+			width: 45%;
+			margin: 1rem;
+
+			p {
+				font-size: 1rem;
+				margin: 1rem;
+			}
+		}
+
+		&__secondary-rectangle:last-of-type {
+			flex-basis: 100%;
+		}
+
+		&__primary-rectangle {
+			width: 100%;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1400px) {
+	.article {
+		width: 90%;
+		height: 100vh;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+
+		.wrapper {
+			margin-top: 0;
+			width: 30vw;
+			height: 70vh;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+
+		&__primary-rectangle {
+			width: 50%;
+			height: 95vh;
+		}
+
+		&__secondary-rectangle {
+			margin: 0 2rem 0.5rem;
+			width: 30vh;
+			height: 30%;
+			flex-basis: 0%;
+			padding: 3rem;
+
+			p {
+				font-size: 12px;
+				text-align: center;
+			}
+		}
+
+		&__secondary-rectangle:last-of-type {
+			flex-basis: 0%;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.red-rectangle {
+	&__rectangle {
+		height: 30vh;
+		background-color: $redRectangleColor;
+		margin-bottom: 1rem;
+	}
+}
+
+
+
+@media screen and (min-width: 800px) {
+	.red-rectangle {
+		&__rectangle {
+			height: 40vh;
+		}
+	}
+}

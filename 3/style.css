@@ -1,0 +1,49 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url('https://images.rapgenius.com/92abc49a4468f440d86e3c66541f0a2b.1000x991x1.jpg') center/cover;
+}
+
+.nav {
+	background-color: #008B8B;
+}
+
+.panda {
+	margin: 0 20px;
+}
+
+.content-wrapper {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 90vh;
+}
+
+.image-wrapper {
+	width: 500px;
+	height: 500px;
+	vertical-align: center;
+	border: 1px solid #c41e3a;
+	-webkit-box-shadow: 2px -1px 30px 0px rgba(196, 30, 58, 1);
+	-moz-box-shadow: 2px -1px 30px 0px rgba(196, 30, 58, 1);
+	box-shadow: 2px -1px 30px 0px rgba(196, 30, 58, 1);
+}
+
+.cat-image {
+	width: 100%;
+	height: 100%;
+}
+
+.heading {
+	text-align: center;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 8em;
+	white-space: nowrap;
+	font-size: 5vw;
+	z-index: 1000;
+	font-family: 'Bangers', cursive;
+	text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+}

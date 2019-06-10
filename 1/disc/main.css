@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header__bar {
+  background-color: #424414;
+  height: 20vh; }
+
+.header__logo {
+  background: url("./../assets/img/grass.jpg") center/cover;
+  height: 30vh;
+  margin: 0.9rem 0; }
+
+@media screen and (min-width: 800px) {
+  .header__bar {
+    height: 15vh;
+    margin: 0 1rem; }
+  .header__logo {
+    height: 45vh; } }
+
+@media screen and (min-width: 1400px) {
+  .header__bar {
+    height: 15vh;
+    margin: 0 12vw 1.5rem; }
+  .header__logo {
+    height: 55vh;
+    margin-bottom: 1.5rem; } }
+
+.article__primary-rectangle {
+  height: 50vh;
+  background-color: #0AA033;
+  margin: 0 1rem;
+  margin-bottom: 0.9rem; }
+
+.article__secondary-rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18A1AB;
+  height: 25vh;
+  margin: 1rem; }
+  .article__secondary-rectangle p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #FFFCFF;
+    margin: 0 2rem 1.2rem; }
+
+@media screen and (min-width: 800px) {
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .article .wrapper {
+      margin: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between; }
+    .article__secondary-rectangle {
+      width: 45%;
+      margin: 1rem; }
+      .article__secondary-rectangle p {
+        font-size: 1rem;
+        margin: 1rem; }
+    .article__secondary-rectangle:last-of-type {
+      flex-basis: 100%; }
+    .article__primary-rectangle {
+      width: 100%; } }
+
+@media screen and (min-width: 1400px) {
+  .article {
+    width: 90%;
+    height: 100vh;
+    flex-direction: row-reverse;
+    justify-content: flex-end; }
+    .article .wrapper {
+      margin-top: 0;
+      width: 30vw;
+      height: 70vh;
+      flex-direction: column;
+      align-items: flex-end; }
+    .article__primary-rectangle {
+      width: 50%;
+      height: 95vh; }
+    .article__secondary-rectangle {
+      margin: 0 2rem 0.5rem;
+      width: 30vh;
+      height: 30%;
+      flex-basis: 0%;
+      padding: 3rem; }
+      .article__secondary-rectangle p {
+        font-size: 12px;
+        text-align: center; }
+    .article__secondary-rectangle:last-of-type {
+      flex-basis: 0%; } }
+
+.red-rectangle__rectangle {
+  height: 30vh;
+  background-color: #A51A36;
+  margin-bottom: 1rem; }
+
+@media screen and (min-width: 800px) {
+  .red-rectangle__rectangle {
+    height: 40vh; } }
+
+.green-rectangle__rectangle {
+  height: 50vh;
+  background-color: #22A111;
+  margin: 1rem; }
+
+@media screen and (min-width: 800px) {
+  .green-rectangle__rectangle {
+    height: 60vh; } }
+
+@media screen and (min-width: 1400px) {
+  .green-rectangle__rectangle {
+    height: 50vh;
+    margin: 2rem 10vw; } }
+
+.yellow-rectangle__rectangle {
+  height: 40vh;
+  background-color: #AFB60A;
+  margin-bottom: 1rem; }

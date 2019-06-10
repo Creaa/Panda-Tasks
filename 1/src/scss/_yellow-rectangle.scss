@@ -1,0 +1,7 @@
+.yellow-rectangle {
+	&__rectangle {
+		height: 40vh;
+		background-color: $yellowRectangleColor;
+		margin-bottom: 1rem;
+	}
+}
